@@ -19,6 +19,21 @@ body{
     font-family: $basefont;
 }
 
-h1 {
-    color: $bluetext;
-}
+#game-board {
+    width: 400px;
+    height: 400px;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+  }
+
+  .grid-cell {
+    border: 1px solid #ddd;
+  }
+  .snake {
+    background-color: green;
+  }
+  .food {
+    background-color: red;
+  }
